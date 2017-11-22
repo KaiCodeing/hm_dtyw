@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_base_"></include>
+    <LinearLayout
+        android:id="@+id/bank_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="选择银行"
+            android:textSize="@dimen/textsize_10"
+            android:textColor="#676767"/>
+        <TextView
+            android:id="@+id/bank_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:textSize="@dimen/textsize_8"
+
+            android:layout_gravity="center"
+            android:gravity="right"/>
+        <ImageView
+
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@mipmap/sanjiao_name"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_p"></View>
+    <LinearLayout
+        android:id="@+id/name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="户主姓名"
+            android:textSize="@dimen/textsize_10"
+            android:textColor="#676767"/>
+        <TextView
+            android:id="@+id/bank_user_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/textsize_8"
+            android:gravity="right|center"/>
+        <ImageView
+
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@mipmap/sanjiao_name"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_p"></View>
+
+    <LinearLayout
+        android:id="@+id/bank_number_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="银行卡号"
+            android:textSize="@dimen/textsize_10"
+            android:textColor="#676767"/>
+        <TextView
+            android:id="@+id/bank_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/textsize_8"
+            android:gravity="right|center"/>
+        <ImageView
+
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@mipmap/sanjiao_name"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_p"></View>
+
+    <LinearLayout
+        android:id="@+id/bank_kaihu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="开户行名称"
+            android:textSize="@dimen/textsize_10"
+            android:textColor="#676767"/>
+        <TextView
+            android:id="@+id/bank_open_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center"
+
+            android:textSize="@dimen/textsize_8"/>
+        <ImageView
+
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@mipmap/sanjiao_name"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_p"></View>
+
+
+
+</LinearLayout>

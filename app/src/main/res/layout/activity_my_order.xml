@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_base_"></include>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<RadioGroup
+    android:id="@+id/radio_selete"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp">
+<RadioButton
+    android:id="@+id/all_sp"
+    android:gravity="center"
+    android:layout_width="0dp"
+    android:checked="true"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:textSize="@dimen/textsize_9"
+    android:button="@null"
+    android:text="全部"
+    android:textColor="@drawable/select_class"/>
+    <RadioButton
+        android:id="@+id/wait_buy_sp"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:textSize="@dimen/textsize_9"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:text="待付款"
+        android:textColor="@drawable/select_class"/>
+
+    <RadioButton
+        android:id="@+id/wait_go_sp"
+        android:gravity="center"
+        android:textSize="@dimen/textsize_9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:text="待发货"
+        android:textColor="@drawable/select_class"
+        android:checked="false" />
+
+    <RadioButton
+        android:id="@+id/wait_out_sp"
+        android:gravity="center"
+        android:textSize="@dimen/textsize_9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:text="待收货"
+        android:textColor="@drawable/select_class"
+        android:checked="false" />
+    <RadioButton
+        android:id="@+id/wait_pj_sp"
+        android:gravity="center"
+        android:textSize="@dimen/textsize_9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:text="待评价"
+        android:textColor="@drawable/select_class"/>
+    <RadioButton
+    android:id="@+id/over_sp"
+    android:gravity="center"
+        android:textSize="@dimen/textsize_9"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:button="@null"
+    android:text="已完成"
+    android:textColor="@drawable/select_class"/>
+</RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+            <View
+                android:id="@+id/view1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/title_backgroid"></View>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/title_backgroid"
+                android:visibility="invisible"
+               ></View>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/title_backgroid"
+                android:visibility="invisible"
+                ></View>
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/title_backgroid"
+                android:visibility="invisible"
+               ></View>
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/title_backgroid"
+                android:visibility="invisible"
+                ></View>
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/title_backgroid"
+                android:visibility="invisible"
+                ></View>
+
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+       >
+        <ImageView
+            android:id="@+id/all_delete"
+            android:layout_width="25dp"
+            android:layout_gravity="center"
+            android:layout_height="25dp"
+            android:src="@mipmap/check_anzhuang_on"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="全选"
+            android:textSize="@dimen/textsize_8"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合计 ¥"
+            android:textColor="#3F3F3F"/>
+        <TextView
+            android:id="@+id/all_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F24949"
+            android:textSize="@dimen/textsize_10"
+            android:layout_marginRight="10dp"
+            android:text="0"/>
+        <TextView
+            android:id="@+id/back_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去付款"
+            android:textColor="@color/white"
+            android:background="@drawable/buy_go_bg"
+            android:textSize="@dimen/textsize_9"
+            android:padding="10dp"/>
+    </LinearLayout>
+</LinearLayout>

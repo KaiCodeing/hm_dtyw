@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ECECEC">
+
+    <TextView
+        android:id="@+id/type_class_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="15dp"
+        android:text="装置类型"
+        android:textSize="@dimen/textsize_8" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_p"></View>
+
+    <LinearLayout
+        android:id="@+id/city_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ECECEC"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECECEC">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ECECEC"
+                android:visibility="gone"></View>
+
+            <com.hemaapp.dtyw.view.FlowLayout
+                android:id="@+id/add_view_guige"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#ECECEC"
+                android:visibility="gone"></com.hemaapp.dtyw.view.FlowLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

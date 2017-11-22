@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00C3AF</color>
+    <color name="colorPrimaryDark">#00C3AF</color>
+    <color name="colorAccent">#00C3AF</color>
+    <color name="title_backgroid">#00C3AF</color>
+    <color name="backgroid_check">#00C3AF</color>
+    <color name="province_line_border">#D0D0D0</color>
+    <color name="color_text">#191919</color>
+    <color name="shaixuan">#272727</color>
+    <color name="jiaoyi_jian">#F04A4A</color>
+    <color name="tuikuan">#373737</color>
+</resources>

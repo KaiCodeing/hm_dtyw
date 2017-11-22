@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/delete_user_"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/delete_user_img"
+        android:layout_marginRight="15dp"/>
+    <com.hemaapp.hm_FrameWork.view.RoundedImageView
+        android:id="@+id/user_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+       />
+    <TextView
+        android:id="@+id/user_nick_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="用户昵称"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_8"
+        android:layout_marginLeft="10dp"/>
+    <ImageView
+        android:id="@+id/selete_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/check_anzhuang_on"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_p"></View>
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_right_image"></include>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" >
+
+        <com.hemaapp.hm_FrameWork.view.RefreshLoadmoreLayout
+            android:id="@+id/refreshLoadmoreLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" >
+
+            <xtom.frame.view.XtomListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@null"
+                android:listSelector="@color/transparent" />
+        </com.hemaapp.hm_FrameWork.view.RefreshLoadmoreLayout>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+        <ImageView
+            android:id="@+id/go_top_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/top_next_img"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="20dp"
+            android:visibility="invisible"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#EEEEEE"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:id="@+id/car_image"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/car_gw_img"
+                />
+            <TextView
+                android:id="@+id/view_show"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:background="@drawable/car_gw_show"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+
+                android:text="4"
+                android:textSize="@dimen/textsize_5"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"></TextView>
+        </FrameLayout>
+        <TextView
+            android:id="@+id/add_car_text"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/add_car_on"
+            android:text="加入购物车"
+            android:textColor="@color/backgroid_check"
+            android:textSize="@dimen/textsize_10"
+            android:gravity="center"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/go_money_text"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/buy_commonid_bg"
+            android:text="立即购买"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_10"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+</LinearLayout>

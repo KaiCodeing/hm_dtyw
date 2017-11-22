@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/zimu_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EAEAEA"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="A"
+        android:textColor="#373737"
+        android:textSize="@dimen/textsize_8" />
+
+    <LinearLayout
+        android:id="@+id/city_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <com.hemaapp.dtyw.view.FlowLayout
+            android:id="@+id/add_view_guige"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            ></com.hemaapp.dtyw.view.FlowLayout>
+    </LinearLayout>
+</LinearLayout>

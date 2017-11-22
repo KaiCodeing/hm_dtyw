@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title_base_"></include>
+    <LinearLayout
+        android:id="@+id/change_password_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改登录密码"
+            android:gravity="center"
+            android:layout_gravity="center"
+
+            android:textSize="@dimen/textsize_9"
+            android:textColor="#464646"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></View>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/sanjiao_name"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_p"></View>
+
+
+    <LinearLayout
+        android:id="@+id/change_tixian_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改提现/支付密码"
+            android:gravity="center"
+            android:layout_gravity="center"
+
+            android:textSize="@dimen/textsize_9"
+            android:textColor="#464646"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></View>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/sanjiao_name"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_p"></View>
+
+
+    <LinearLayout
+        android:id="@+id/find_zhifu_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="找回提现/支付密码"
+            android:gravity="center"
+            android:layout_gravity="center"
+
+            android:textSize="@dimen/textsize_9"
+            android:textColor="#464646"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></View>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/sanjiao_name"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_p"></View>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="right"
+        android:layout_marginLeft="10dp"
+        android:hint="初始提现/支付密码为登录密码"
+        android:drawableLeft="@mipmap/beizhu_star_img"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="10dp"
+        />
+</LinearLayout>

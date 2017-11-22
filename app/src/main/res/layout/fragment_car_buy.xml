@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/title_base_"></include>
+        <LinearLayout
+            android:id="@+id/view"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <com.hemaapp.hm_FrameWork.view.RefreshLoadmoreLayout
+                android:id="@+id/refreshLoadmoreLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible" >
+
+            <xtom.frame.view.XtomListView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@color/transparent"
+                    android:divider="@null"
+                    android:listSelector="@color/transparent" />
+            </com.hemaapp.hm_FrameWork.view.RefreshLoadmoreLayout>
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/all_buy_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/address_check_on_img" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="全选"
+                android:textColor="#000000"
+                android:textSize="@dimen/textsize_9" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"></View>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="合计"
+                        android:textColor="#242424" />
+                    <TextView
+                        android:id="@+id/money_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@mipmap/moeny_img"
+                        android:drawablePadding="1dp"
+                        android:gravity="center"
+                        android:text="0.0"
+                        android:textColor="#F24949"
+                        android:textSize="@dimen/textsize_10" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/yunfei_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="（运费0元）"
+                    android:textColor="#878787"
+                    android:textSize="@dimen/textsize_7" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/buy_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buy_go_bg"
+
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="结算"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_10" />
+        </LinearLayout>
+
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/colose_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/login_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/title_backgroid"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_9"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="请登录" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

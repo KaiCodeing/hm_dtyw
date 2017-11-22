@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/white_p"></View>
+    <LinearLayout
+        android:id="@+id/shangp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/commod_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/commod_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#373737"
+                android:textSize="@dimen/textsize_8"
+                android:text="产品名称"/>
+            <com.hemaapp.dtyw.view.FlowLayout
+                android:id="@+id/flowlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </com.hemaapp.dtyw.view.FlowLayout>
+            <TextView
+                android:id="@+id/add_view_guige"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#8C8C8C"
+                android:textSize="@dimen/textsize_7"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:visibility="gone"
+                android:orientation="vertical"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:src="@mipmap/moeny_img"
+                    android:layout_marginTop="1dp"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:id="@+id/money_text"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="236"
+                    android:textColor="#F24949"
+                    android:textSize="@dimen/textsize_8"
+                    android:drawablePadding="3dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                   >
+                    <ImageView
+                        android:id="@+id/subtarct"
+                        android:layout_width="40dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_addsubtract"
+                        android:paddingLeft="7.5dp"
+
+                        android:paddingRight="7.5dp"
+                        android:src="@mipmap/subtract" />
+
+                    <TextView
+                        android:id="@+id/add_or_subtract"
+                        android:layout_width="40dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/cornerbg_addandsubtract_on"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="#959595"
+                        android:textSize="@dimen/textsize_6" />
+
+                    <ImageView
+                        android:id="@+id/add"
+                        android:layout_width="40dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="25dp"
+                        android:background="@drawable/bg_addsubtract"
+                        android:paddingLeft="7.5dp"
+                        android:paddingRight="7.5dp"
+                        android:src="@mipmap/add" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

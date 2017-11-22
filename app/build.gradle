@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "com.hemaapp.dtyw.myapplication"
+        minSdkVersion 9
+        targetSdkVersion 22
+        versionCode 1050
+        versionName "1.0.5.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    signingConfigs {
+        // your debug keystore
+        debug {
+            keyAlias 'hm_tpw'
+            keyPassword '123456Aa'
+            storePassword '123456Aa'
+            storeFile file("hm_tpw.jks")
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile project(':hm_framework')
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile project(':onekeyshare')
+}

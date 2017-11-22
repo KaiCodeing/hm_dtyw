@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_p"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_base_"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/tui_outcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退款状态"
+            android:textColor="@color/title_backgroid"
+            android:textSize="@dimen/textsize_9" />
+
+        <TextView
+            android:id="@+id/outcome_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="申请原因" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/white_p"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/tui_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退款原因"
+            android:textColor="@color/title_backgroid"
+            android:textSize="@dimen/textsize_7" />
+
+        <TextView
+            android:id="@+id/reason_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="申请原因文字"
+            android:textColor="#040404"
+            android:textSize="@dimen/textsize_8" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/white_p"></View>
+
+    <TextView
+        android:id="@+id/infor_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:lineSpacingExtra="2dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp"
+        android:text="申请时间：2016.03.03 06:12\n订单号：1234562323\n订单时间：2016.06.12\n订单状态：待发货"
+        android:textSize="@dimen/textsize_8"></TextView>
+
+    <TextView
+        android:id="@+id/pop_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/title_backgroid"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="提交快递信息"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_8" />
+</LinearLayout>
